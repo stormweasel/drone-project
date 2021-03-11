@@ -6,6 +6,11 @@ name: project
 steps:
 - name: all
   image: alpine
+  enviroment:
+    username: 
+      from_secret: docker_username
+    password:
+      from_secret: docker_password
   commands:
   - docker build -t project .
   - docker push stormweasel/drone-project
