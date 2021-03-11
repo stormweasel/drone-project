@@ -5,12 +5,15 @@ name: project
 
 steps:
 - name: all
-  image: alpine
+  image: plugin/docker
   enviroment:
     username: 
       from_secret: docker_username
     password:
       from_secret: docker_password
-  commands:
-  - docker build -t project .
-  - docker push stormweasel/drone-project
+  settings:
+    username: docker_username
+    password: docker_password
+    repo: stormweasel
+    auto_tag: true
+    auto_tag_suffix: drone-build
