@@ -5,7 +5,7 @@ name: project
 
 steps:
 - name: all
-  image: plugin/docker
+  image: plugins/docker
   settings:
     username: 
       from_secret: docker_username
