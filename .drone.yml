@@ -5,6 +5,7 @@ name: project
 
 steps:
 - name: all
+  image: alpine
   commands:
   - docker build -t project .
   - docker push stormweasel/drone-project
