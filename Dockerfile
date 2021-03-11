@@ -6,8 +6,12 @@ EXPOSE 8080:8080
 COPY ./ ./
 
 RUN go get -d ./...
-run go build ./cmd/server/main.go
+# run go build ./cmd/server/main.go
 
-# WORKDIR ./cmd/server
+ENV dbDriver
+ENV dbUser
+ENV dbPass
+ENV dbHost
+ENV dbName
 
-CMD [ "./main" ]
+CMD [ "go","run","./cmd/server/main.go" ]
