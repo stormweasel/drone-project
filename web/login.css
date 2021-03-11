@@ -1,0 +1,77 @@
+body {
+  background: rgb(228, 221, 224);
+  background: radial-gradient(
+    circle,
+    rgba(228, 221, 224, 1) 0%,
+    rgba(94, 89, 91, 1) 100%
+  );
+}
+
+header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 140px;
+  background-color: black;
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: 600;
+  color: gray;
+  text-align: center;
+  text-shadow: 2px 2px white;
+  padding: 20px 0;
+}
+
+form {
+  text-align: center;
+  position: absolute;
+  top: 28%;
+  left: 37%;
+  width: 23%;
+  background-color: lightgray;
+  box-shadow: 6px 6px black;
+  border-radius: 15px;
+}
+
+fieldset {
+  border-radius: 5px;
+}
+
+input {
+  width: 60%;
+  margin: 0 5%;
+}
+
+#warning {
+  color: red;
+}
+
+button {
+  border-radius: 4px;
+  color: whitesmoke;
+  font-size: 15px;
+  background-color: rgb(56, 54, 54);
+  box-shadow: 2px 2px black;
+}
+
+#first {
+  margin-right: 20px;
+}
+
+input[name="password"] {
+  margin-right: 0;
+  margin-left: 5%;
+}
+
+img.eye {
+  text-align: center;
+  height: 18px;
+  position: relative;
+  top: 6px;
+  right: 6%;
+  border: 1px solid grey;
+}

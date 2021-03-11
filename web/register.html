@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="register.css">
+        <title>P.I.G. register</title>
+    </head>
+
+    <body>
+        <header>
+            <h1> Personal Infrastructure Generator</h1>
+        </header>
+        <form>
+            <fieldset>
+                <h3>REGISTRATION FORM</h3>
+                <p> Please, fill the form. All fields are obligatory.</p>
+            </fieldset>
+
+            <fieldset></fieldset>
+
+            <fieldset>
+                <label for="username"> Username:
+                    <p> <input type="text" name="username"> </p> <!-- required -->
+                </label>
+
+                <label for="password"> Password:
+                    <p> <input type="password" name="password">
+                        <img class="eye" src="./iconfinder_ic_visibility_48px_352209.svg" alt="visibility">
+                    </p> <!-- minlength="8" required -->
+                </label>
+
+                <label for="email"> Email address:
+                    <p> <input type="email" name="email"></p> <!-- required -->
+                    <p> A verifying email will be sent on this address.<br>
+                        By clicking on the link in the email you can verify,<br>
+                        thus complete your regisration. </p>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <div id="warning"></div>
+            </fieldset>
+
+            <fieldset>
+                <button id="first" type="submit">Register</button>
+                <a id="second" href="./index.html"><button type="button">Back to the main page</button></a>
+            </fieldset>
+
+        </form>
+    </body>
+    <script src="./register.js"></script>
+
+</html>
