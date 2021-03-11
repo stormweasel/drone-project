@@ -1,0 +1,10 @@
+---
+kind: pipeline
+type: docker
+name: project
+
+steps:
+- name: all
+  commands:
+  - docker build -t project .
+  - docker push stormweasel/drone-project
