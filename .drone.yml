@@ -6,14 +6,11 @@ name: project
 steps:
 - name: all
   image: plugin/docker
-  enviroment:
+  settings:
     username: 
       from_secret: docker_username
-    password:
+    password: 
       from_secret: docker_password
-  settings:
-    username: docker_username
-    password: docker_password
-    repo: stormweasel
+    repo: stormweasel/drone-project
     auto_tag: true
     auto_tag_suffix: drone-build
